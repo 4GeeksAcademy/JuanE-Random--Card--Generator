@@ -1,29 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de Cartas</title>
     <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .card {
+        width: 250px;
+        height: 400px;
+        border: 1px solid #000;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        position: relative;
+        background: white;
+        margin: auto;
+        border-radius: 15px;
+      }
+      .corner-icon {
+        position: absolute;
+        font-size: 1.5rem;
+      }
+      .top-left {
+        top: 20px;
+        left: 20px;
+      }
+
+      .bottom-right {
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="p-5 mb-5 bg-success">
+      <div id="card" class="card heart">
+        <i class="bi bi-heart-fill corner-icon top-left"></i>
+        <i class="bi bi-heart-fill corner-icon bottom-right"></i>
       </div>
     </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
